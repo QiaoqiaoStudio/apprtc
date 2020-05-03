@@ -39,6 +39,12 @@ grunt runPythonTests
 ## Deployment
 Instructions were performed on Ubuntu 14.04 using Python 2.7.6 and Go 1.6.3.
 
+### Inside Docker
+
+For collider, run `./build-run-collider.sh`
+
+### Outside Docker
+
 1. Clone the AppRTC repository
 2. Do all the steps in the [Collider instructions](https://github.com/webrtc/apprtc/blob/master/src/collider/README.md) then continue on step 3.
 3. Install and start a Coturn TURN server according to the [instructions](https://github.com/coturn/coturn/wiki/CoturnConfig) on the project page.
