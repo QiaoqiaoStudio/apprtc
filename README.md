@@ -58,10 +58,10 @@ For collider, run `./build-run-collider.sh`
 
 ### TURN/STUN
  * **If using TURN and STUN servers directly**
-    * Comment out `TURN_SERVER_OVERRIDE = []` and then uncomment `TURN_SERVER_OVERRIDE = [ { "urls":...]` three lines below and fill your TURN server details, e.g.
+    * Comment out `ICE_SERVER_OVERRIDE = []` and then uncomment `ICE_SERVER_OVERRIDE = [ { "urls":...]` three lines below and fill your TURN server details, e.g.
 
     ```python
-    TURN_SERVER_OVERRIDE = [
+    ICE_SERVER_OVERRIDE = [
       {
         "urls": [
           "turn:hostnameForYourTurnServer:19305?transport=udp",
