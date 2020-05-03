@@ -5,3 +5,8 @@ services:
       context: ./src/collider
     ports:
      - "49160:8089"
+  coturn:
+    build:
+      context: ./src/coturn
+    ports:
+     - "49160:8089"
