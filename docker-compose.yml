@@ -1,0 +1,12 @@
+version: '1'
+services:
+  collider:
+    # will build ./docker/web/Dockerfile
+    build: ./docker/collider
+    ports:
+     - "49160:8089"
+  web:
+    # will build ./docker/db/Dockerfile
+    build: ./docker/web
+    ports:
+      - "3306:3306"
